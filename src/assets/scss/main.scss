@@ -1,0 +1,10 @@
+// abstracts scss files
+@import './abstracts/functions.scss';
+@import './abstracts/mixins.scss';
+@import './abstracts/variables.scss';
+
+// base scss files
+@import './base/typography.scss';
+
+// components scss files
+@import './components/buttons.scss';
