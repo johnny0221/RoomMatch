@@ -1,0 +1,31 @@
+.mt-1 {
+    margin-top: .8rem;
+
+    @include respond(tab-port) {
+        margin-top: .5rem;
+    }
+}
+
+.mb-1 {
+    margin-bottom: .8rem;
+
+    @include respond(tab-port) {
+        margin-bottom: .5rem;
+    }
+}
+
+.ml-1 {
+    margin-left: .8rem;
+
+    @include respond(tab-port) {
+        margin-left: .5rem;
+    }
+}
+
+.mr-1 {
+    margin-right: .8rem;
+
+    @include respond(tab-port) {
+        margin-right: .5rem;
+    }
+}

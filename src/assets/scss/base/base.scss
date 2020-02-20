@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+
+    height: 100%;
+
+    font-size: 62.5%; //1rem = 10px;
+
+    @include respond(large-desktop) {
+        font-size: 75%;    //1rem = 12px
+    }
+
+    @include respond(small-nb) {
+        font-size: 56.25%; // 1rem = 9px
+    }
+
+    @include respond(tab-port) {
+        font-size: 43.75%; // 1rem = 7px
+    }
+
+    @include respond(phone) {
+        font-size: 30%; // 1rem = 4.8px;
+    }
+}
+
+body {
+    font-family: $font-primary;
+    font-weight: 300;
+}

@@ -1,0 +1,23 @@
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins.scss';
+
+%heading {
+    font-family: $font-primary;
+    font-weight: 400;
+    color: $color-brown;
+}
+
+.heading-large {
+    @extend %heading;
+    font-size: 4.5rem;
+}
+
+.heading-medium {
+    @extend %heading;
+    font-size: 3.5rem;
+}
+
+.heading-small {
+    @extend %heading;
+    font-size: 2rem;
+}

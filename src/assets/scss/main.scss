@@ -2,8 +2,10 @@
 @import './abstracts/functions.scss';
 @import './abstracts/mixins.scss';
 @import './abstracts/variables.scss';
+@import './abstracts/margins.scss';
 
 // base scss files
+@import './base/base.scss';
 @import './base/typography.scss';
 
 // components scss files

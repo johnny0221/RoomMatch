@@ -1,0 +1,21 @@
+@mixin abscenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 600px) {@content};
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 900px) {@content};
+    }
+    @if $breakpoint == small-nb {
+        @media only screen and (max-width: 1200px) {@content};
+    }
+    @if $breakpoint == large-desktop {
+        @media only screen and (max-width: 1800px) {@content};
+    }
+}
