@@ -1,21 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 // primeNg Module
-import {ButtonModule} from 'primeng/button';
-
 import { NgModule } from '@angular/core';
-import { AppRoutingModule } from './app-routing.module';
+import { routes } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LandingPageComponent } from './LandingPage/LandingPage.component';
-
+import { RouterModule } from '@angular/router';
+// Component Module
+import { LandingPageModule } from './LandingPage/LandingPage.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeModule } from './Home/Home.module';
 @NgModule({
    declarations: [
       AppComponent,
-      LandingPageComponent
    ],
    imports: [
       BrowserModule,
-      AppRoutingModule,
-      ButtonModule
+      RouterModule.forRoot(routes),
+      LandingPageModule,
+      HomeModule,
+      BrowserAnimationsModule
    ],
    providers: [],
    bootstrap: [
