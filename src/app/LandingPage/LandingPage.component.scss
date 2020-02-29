@@ -1,4 +1,5 @@
 @import '../../assets/scss/abstracts/variables.scss';
+@import '../../assets/scss/components/buttons.scss';
 
 .container {
     position: fixed;
@@ -25,17 +26,9 @@
     }
 
     &__btn {
-        color: $color-white;
+        @extend %btn;
         padding: 1.5rem 5.0rem;
-        outline: none;
-        position: relative;
-        font-weight: 300;
         font-size: 1.5rem;
-        text-decoration: none;
-        display: inline-block;
-        border-radius: 100px;
-        border: none;
         background-image: linear-gradient(to right, $color-pink-light, $color-pink-dark);
-        cursor: pointer;
     }
 }

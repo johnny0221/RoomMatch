@@ -1,0 +1,99 @@
+@import '../../assets/scss/components/buttons.scss';
+@import '../../assets//scss/abstracts/variables.scss';
+@import '../../assets/scss/abstracts/mixins.scss';
+.about {
+    &__1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include respond(phone) {
+            flex-direction: column;
+        }
+    }
+}
+
+.hands {
+    @include respond(phone) {
+        display: none;
+    }
+}
+
+.character {
+
+    @include respond(phone) {
+        &:last-child {
+            margin-top: 4.5rem;
+        }
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__list {
+
+        &--text {
+            font-size: 1.4rem;
+            color: $color-brown;
+        }
+    }
+}
+
+
+
+
+.icon {
+    &__question {
+        width: 5rem;
+        height: 5rem;
+        fill: $color-brown;
+    }
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 2.5rem;
+}
+
+.house {
+    font-size: 14px;
+    &__image {
+        width: 100%;
+        height: 20rem;
+        object-fit: cover;
+        border-radius: 3px;
+    }
+
+    &__address {
+
+    }
+
+    &__startDate {
+
+    }
+
+    &__endDate {
+
+    }
+
+    &__price {
+
+    }
+
+    &__btnMore {
+        @extend %btn;
+        padding: 1.5rem 5.0rem;
+        font-size: 1.5rem;
+        background-image: linear-gradient(to right, $color-pink-light, $color-pink-dark);
+    }
+}
